@@ -6,6 +6,9 @@
 /*1. Global*/
 body {
     font-family: 'Red Hat Display', sans-serif;
+    background-image: url(images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -15,19 +18,129 @@ body {
 
 p {
     font-weight: 500;
+    font-size: 16px;
+    opacity: .5;
+    color: hsl(223, 47%, 23%);
 }
 
-h3 {
+h2 {
     font-weight: 900;
+    color: hsl(223, 47%, 23%);
 }
 
 
 
 /*3. Categories*/
 
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    display: flex;
+    height: 600px;
+    width: 400px;
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+}
 
 
+.card img {
+    width: 100%;
+    height: 35%;
+}
 
+.card-bottom {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 65%;
+    text-align: center;
+    background-color: white;
+}
 
+.content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 100%;
+    padding: 30px;
+    
+}
+
+.plan-selection {
+    display: flex;
+    border-radius: 10px;
+    background-color: hsl(225, 100%, 98%);
+    justify-content: space-between;
+    background-position: left;
+    align-items: center;
+    padding: 15px;
+    
+    
+}
+
+.plan-details {
+    display: flex;
+    flex-direction: column;
+    background-image: url(images/icon-music.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-left: 60px;
+    overflow: visible;
+}
+
+.plan-details strong {
+    opacity: 1;
+}
+
+.plan-details p {
+    margin: 0px;
+}
+
+.plan-selection a {
+    color: hsl(245, 75%, 52%);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.payment {
+    background-color: hsl(245, 75%, 52%);
+    box-shadow: 0px 10px 15px hsl(224, 23%, 55%);
+    border-radius: 15px;
+    width: 100%;
+    color: white;
+    padding: 10px 0px;
+    line-height: 2;
+    font-family: 'Red Hat Display', sans-serif;
+    font-weight: 700;
+    margin: 20px 0px;
+}
+
+button {
+    all: unset;
+    cursor: pointer;
+}
+
+button:active {
+    background-color: hsl(224, 23%, 55%)
+}
 
 /*4. Functional*/
+/*Pale blue*/
+color: hsl(225, 100%, 94%);
+/*Bright blue*/
+color: hsl(245, 75%, 52%); 
+
+### Neutral
+
+- Very pale blue: hsl(225, 100%, 98%)
+- Desaturated blue: hsl(224, 23%, 55%)
+- Dark blue: hsl(223, 47%, 23%)
